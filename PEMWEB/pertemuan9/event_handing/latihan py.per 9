@@ -1,0 +1,11 @@
+#list kosong 
+list_kosong = []
+
+#list campuran 
+campuran = [70,"cindy","jakarta",true,"kucing","harimau"]
+print(f"data list : {campuran}")
+print(campuran[2])
+print(campuran[-1])
+print(campuran[3:-1])
+print(campuran[3:])
+print(campuran[:4])

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan8</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <h1>from data mahasiswa</h1>
+    <form method="get">
+        <table border="1">
+            <tr>
+                <td><label for="name">nama lengkap</label></td>
+                <td> <input type="text" name="name" id="name" placeholder="isi nama lengkap" size="40" minlength="2" maxlength="7"></td>              <!-- batasan input terdapat 'minlength' dan 'maxlength' -->
+            </tr>
+            <tr>
+                <td> <label for="email">Email</label></td>
+                <td><input type="email" name="email" id="email" placeholder="masuka email" value="mahasiswa@gmail.com" size="40" disabled></td>                 <!-- readonly meyebabkan tidak bisa input hanya bisa menampilkan -->
+            </tr>
+            <tr>
+                <td><label for="tgl">tempat tangal lahir</label></td>
+                <td><input type="text" placeholder="tempat"><input type="date" name="tgl" id="tgl" size="25"></td>
+               
+            </tr>
+            <tr>
+                <td><label for="jk">jenis kelamin</label></td>
+                <td><input type="radio" name="jkel" id="jk">pria
+                <input type="radio" name="jkel" id="jk">wanita</td>     <!-- name wajib sama ,jika tidak sama maka bisa di isi keduanya  -->
+            </tr>
+            <tr>
+                <td><label for="hobby">hobby</label></td>
+                <td>
+                    <input type="checkbox" name="hobby1" value="ngoding">ngoding
+                    <input type="checkbox" name="hobby2" value="swiming">swiming
+                    <input type="checkbox" name="hobby3" value="sleep">sleep
+                    <input type="checkbox" name="hobby4" value="gaming">gaming
+                </td>
+            </tr>
+            <tr>
+                <td><label for="foto">upload foto</label></td>
+                <td><input type="file" name="foto" id="foto" accept=".jpeg, .png, .jpg" multiple></td>
+                <!-- fungsi 'accept' untuk menetukan format input .
+                'multiple' dapat menginput semua secara banyak -->
+            </tr>
+            <tr>
+                <td><label for="tlp">nomor telpon</label></td>
+                <td><input type="tel" name="tlp" id="tlp" 
+                    pattern="[0-9]{12}" required></td>
+                    <!-- required fungsinya wajib input atau isi -->
+            </tr>
+
+
+            <tr>
+                <td><button type="submit">submit</button></td>
+                <td><button type="reset">reset</button></td>
+              </tr>
+              
+        
+    </table>
+    </form>
+
+    <video src="alamat file video"></video>
+    <audio src="alamat file audio"></audio>
+</body>
+</html>
